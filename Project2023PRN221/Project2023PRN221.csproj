@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\homepage.png" />
     <None Remove="Images\home_page.png" />
     <None Remove="Images\img_customer.png" />
     <None Remove="Images\img_exit.png" />
@@ -30,6 +31,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\homepage.png" />
     <Resource Include="Images\home_page.png" />
     <Resource Include="Images\img_customer.png" />
     <Resource Include="Images\img_exit.png" />

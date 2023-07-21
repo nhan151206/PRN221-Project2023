@@ -12,6 +12,7 @@
         WindowStyle="None"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen">
+    
     <Border Background="CornflowerBlue"
             CornerRadius="20">
         <Grid>
@@ -21,7 +22,8 @@
                         HorizontalAlignment="Left">
                 <Grid Height="50"
                       VerticalAlignment="Top"
-                      Margin="0 20 0 0">
+                      Margin="0 20 70 0"
+                      >
                     <Border Background="White"
                             Height="25"
                             Width="10"
@@ -90,6 +92,10 @@
                     Click="Exit_Click">
                 <Image Source="Images/shutdown_mo.png"/>
             </Button>
+            <Image Source="Images/homepage.png"
+                   Width="600"
+                   Margin="100 0 0 0"
+                   HorizontalAlignment="Center"/>
         </Grid>
     </Border>
 </Window>

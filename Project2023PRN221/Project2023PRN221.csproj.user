@@ -24,10 +24,10 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Templates.xaml">
+    <Page Update="Theme\MenuButtonTheme.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Theme\MenuButtonTheme.xaml">
+    <Page Update="Theme\MenuItemTheme.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="WindowCustomer.xaml">

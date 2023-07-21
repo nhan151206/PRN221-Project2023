@@ -70,10 +70,10 @@ D:\PRN221\Project2023PRN221\obj\Debug\net6.0-windows\App.baml
 D:\PRN221\Project2023PRN221\obj\Debug\net6.0-windows\Project2023PRN221.Properties.Resources.resources
 D:\PRN221\Project2023PRN221\obj\Debug\net6.0-windows\Project2023PRN221.csproj.GenerateResource.cache
 D:\PRN221\Project2023PRN221\obj\Debug\net6.0-windows\Theme\MenuButtonTheme.baml
-D:\PRN221\Project2023PRN221\obj\Debug\net6.0-windows\Templates.baml
 D:\PRN221\Project2023PRN221\obj\Debug\net6.0-windows\WindowCustomer.g.cs
 D:\PRN221\Project2023PRN221\obj\Debug\net6.0-windows\WindowOrder.g.cs
 D:\PRN221\Project2023PRN221\obj\Debug\net6.0-windows\WindowProduct.g.cs
 D:\PRN221\Project2023PRN221\obj\Debug\net6.0-windows\WindowCustomer.baml
 D:\PRN221\Project2023PRN221\obj\Debug\net6.0-windows\WindowOrder.baml
 D:\PRN221\Project2023PRN221\obj\Debug\net6.0-windows\WindowProduct.baml
+D:\PRN221\Project2023PRN221\obj\Debug\net6.0-windows\Theme\MenuItemTheme.baml
