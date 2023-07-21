@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\PRN221\Project2023PRN221\App.xaml
-21151906203
+71689430505
 
-111661763626
+14797098766
 223184092050
-MainWindow.xaml;WindowLogin.xaml;
+MainWindow.xaml;Templates.xaml;Theme\MenuButtonTheme.xaml;WindowCustomer.xaml;WindowLogin.xaml;WindowOrder.xaml;WindowProduct.xaml;
 
 False
 

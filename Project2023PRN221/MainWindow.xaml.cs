@@ -22,7 +22,45 @@ namespace Project2023PRN221
     {
         public MainWindow()
         {
-            //InitializeComponent();
+            InitializeComponent();
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Customer_Click(object sender, RoutedEventArgs e)
+        {
+            WindowCustomer windowCustomer = new WindowCustomer();
+            windowCustomer.Show();
+            this.Hide();
+        }
+
+        private void Product_Click(object sender, RoutedEventArgs e)
+        {
+            WindowProduct windowProduct = new WindowProduct();
+            windowProduct.Show();
+            this.Hide();
+        }
+
+        private void Order_Click(object sender, RoutedEventArgs e)
+        {
+            WindowOrder windowOrder = new WindowOrder();
+            windowOrder.Show();
+            this.Hide();
+        }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            WindowLogin windowLogin = new WindowLogin();
+            windowLogin.Show();
+            this.Hide();
+        }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }

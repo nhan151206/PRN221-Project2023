@@ -96,5 +96,6 @@ namespace Project2023PRN221
                 System.Runtime.InteropServices.Marshal.ZeroFreeBSTR(passwordBSTR);
             }
         }
+
     }
 }

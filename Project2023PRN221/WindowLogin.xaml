@@ -10,7 +10,7 @@
         Height="700"
         Width="500"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
-        Background="{x:Null}"
+        Background="Transparent"
         AllowsTransparency="True"
         WindowStyle="None"
         WindowStartupLocation="CenterScreen">
@@ -51,18 +51,18 @@
                 </materialDesign:PopupBox>
 
                 <Image Margin="0 30 0 5"
-                       Source="loginlogo.png"
+                       Source="Images/loginlogo.jpg"
                        Height="100" />
                 <TextBlock Margin="0 25 0 5"
                            HorizontalAlignment="Center"
                            FontSize="28"
                            FontWeight="Bold"
                            Text="Online Management App" 
-                           materialDesign:ColorZoneAssist.Background="Aquamarine"/>
+                            />
                 <TextBlock FontSize="20"
                            HorizontalAlignment="Center"
-                           FontWeight="SemiBold" 
-                           Text="Login your account here"/>
+                           FontWeight="SemiBold"
+                           Text="Login your account here" />
                 <TextBox Margin="0 50 0 0"
                          Name="txtUserName" 
                          Width="350"
