@@ -57,7 +57,7 @@
                            HorizontalAlignment="Center"
                            FontSize="28"
                            FontWeight="Bold"
-                           Text="Online Management App" 
+                           Text="WELCOME TO PROFIZ" 
                             />
                 <TextBlock FontSize="20"
                            HorizontalAlignment="Center"

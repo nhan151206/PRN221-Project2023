@@ -2568,11 +2568,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PRN221\\Project2023PRN221\\Project2023PRN221.csproj",
+      "projectUniqueName": "D:\\PRN221-Project2023\\PRN221-Project2023\\Project2023PRN221\\Project2023PRN221.csproj",
       "projectName": "Project2023PRN221",
-      "projectPath": "D:\\PRN221\\Project2023PRN221\\Project2023PRN221.csproj",
+      "projectPath": "D:\\PRN221-Project2023\\PRN221-Project2023\\Project2023PRN221\\Project2023PRN221.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\PRN221\\Project2023PRN221\\obj\\",
+      "outputPath": "D:\\PRN221-Project2023\\PRN221-Project2023\\Project2023PRN221\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

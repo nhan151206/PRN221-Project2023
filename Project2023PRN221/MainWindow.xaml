@@ -49,7 +49,8 @@
                     <MenuItem Header="Customer"
                               Click="Customer_Click"
                               HorizontalAlignment="Left"
-                              Margin="0 0 0 10">
+                              Margin="0 0 0 10"
+                              Foreground="Aqua">
                         <MenuItem.Icon>
                             <Image Source="Images/img_customer.png" />
                         </MenuItem.Icon>
@@ -58,7 +59,8 @@
                     <MenuItem Header="Product"
                               Click="Product_Click"
                               HorizontalAlignment="Left"
-                              Margin="0 0 0 10">
+                              Margin="0 0 0 10"
+                              Foreground="Aqua">
                         <MenuItem.Icon>
                             <Image Source="Images/img_product.png" />
                         </MenuItem.Icon>
@@ -67,7 +69,8 @@
                     <MenuItem Header="Order"
                               Click="Order_Click"
                               HorizontalAlignment="Left"
-                              Margin="0 0 0 10">
+                              Margin="0 0 0 10"
+                              Foreground="Aqua">
                         <MenuItem.Icon>
                             <Image Source="Images/img_order.png" />
                         </MenuItem.Icon>
@@ -76,7 +79,8 @@
                     <MenuItem Header="Back"
                               Click="Back_Click"
                               HorizontalAlignment="Left"
-                              Margin="0 0 0 10">
+                              Margin="0 0 0 10"
+                              Foreground="Aqua">
                         <MenuItem.Icon>
                             <Image Source="Images/img_exit.png" />
                         </MenuItem.Icon>
