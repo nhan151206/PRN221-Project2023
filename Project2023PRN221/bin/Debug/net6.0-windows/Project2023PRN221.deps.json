@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "Project2023PRN221/1.0.0": {
         "dependencies": {
+          "DotNetProjects.WpfToolkit.Input": "6.1.94",
           "MaterialDesignThemes": "4.9.0",
           "Microsoft.EntityFrameworkCore.Design": "6.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10",
@@ -15,6 +16,14 @@
         },
         "runtime": {
           "Project2023PRN221.dll": {}
+        }
+      },
+      "DotNetProjects.WpfToolkit.Input/6.1.94": {
+        "runtime": {
+          "lib/net6.0-windows7.0/DotNetProjects.Input.Toolkit.dll": {
+            "assemblyVersion": "6.1.94.0",
+            "fileVersion": "6.1.94.0"
+          }
         }
       },
       "Humanizer.Core/2.8.26": {
@@ -544,6 +553,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "DotNetProjects.WpfToolkit.Input/6.1.94": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0YcVgMwcytYzhGeIlOTs/5cmbobEa5AdL3vGONiqcScDTXwn5HL7tzIiHAsnPXuy9h+rOFtxuvod2jiRXC6tgQ==",
+      "path": "dotnetprojects.wpftoolkit.input/6.1.94",
+      "hashPath": "dotnetprojects.wpftoolkit.input.6.1.94.nupkg.sha512"
     },
     "Humanizer.Core/2.8.26": {
       "type": "package",

@@ -10,21 +10,23 @@
         Height="600"
         Width="800"
         WindowStartupLocation="CenterScreen"
-        ResizeMode="CanResize"
+        ResizeMode="NoResize"
         Background="Transparent"
         AllowsTransparency="True"
         WindowStyle="None">
     <Border CornerRadius="20">
         <Grid Background="CornflowerBlue">
             <Grid.RowDefinitions>
+                <RowDefinition Height="80" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
                 <RowDefinition Height="100" />
-                <RowDefinition Height="50" />
-                <RowDefinition Height="50" />
-                <RowDefinition Height="50" />
-                <RowDefinition Height="100" />
-                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
+            <!--Tieu de va nut thoat-->
             <StackPanel Grid.Row="0"
                         Orientation="Horizontal">
                 <TextBlock Margin="200 20 100 0"
@@ -45,7 +47,31 @@
                 </Button>
             </StackPanel>
 
-            <StackPanel Grid.Row="1"
+             <!--Search-->
+            <StackPanel Grid.Row="1" 
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Center">
+                <TextBox Margin="10 0 0 10"
+                         Name="txtSearch"
+                         Width="250"
+                         Height="40"
+                         FontSize="20"
+                         BorderThickness="2"
+                         Background="{DynamicResource PrimaryHueLightBrush}"
+                         materialDesign:HintAssist.Hint="Enter your search here"
+                         BorderBrush="{DynamicResource MaterialDesignTextFieldBoxHoverBackground}" />
+                <Button Background="CornflowerBlue"
+                        Height="40"
+                        Width="Auto"
+                        Name="btnSearch"
+                        Click="btnSearch_Click"
+                        Margin="20 0 20 10">
+                    <Image Source="Images/img_search.png"
+                           Stretch="Uniform"/>
+                </Button>
+            </StackPanel>
+
+            <StackPanel Grid.Row="2"
                         Orientation="Horizontal"
                         Visibility="Visible">
                 <Label Content="Customer ID"
@@ -89,7 +115,7 @@
                          />
             </StackPanel>
 
-            <StackPanel Grid.Row="2"
+            <StackPanel Grid.Row="3"
                         Orientation="Horizontal"
                         Visibility="Visible">
                 <Label Content="Birth Date"
@@ -134,7 +160,7 @@
                        Foreground="WhiteSmoke" />
             </StackPanel>
             
-            <StackPanel Grid.Row="3"
+            <StackPanel Grid.Row="4"
                         Orientation="Horizontal"
                         Visibility="Visible">
                 <Label Content="Address"
@@ -157,7 +183,7 @@
             </StackPanel>
 
             <!--Button-->
-            <StackPanel Grid.Row="4"
+            <StackPanel Grid.Row="5"
                         Orientation="Horizontal">
                 <Button Margin="30 10 0 0"
                         Name="btnRefresh"
@@ -212,8 +238,7 @@
             </StackPanel>
 
             <!--ListView-->
-            <StackPanel Grid.Row="5" >
-                <ScrollViewer>
+            <Grid Grid.Row="6">
                     <ListView Name="listCus"
                               PreviewMouseLeftButtonUp="listView_Click"
                               materialDesign:ListViewAssist.HeaderRowBackground="Aquamarine"
@@ -238,8 +263,7 @@
                             </GridView>
                         </ListView.View>
                     </ListView>
-                </ScrollViewer>
-            </StackPanel>
+            </Grid>
         </Grid>
     </Border>
 </Window>

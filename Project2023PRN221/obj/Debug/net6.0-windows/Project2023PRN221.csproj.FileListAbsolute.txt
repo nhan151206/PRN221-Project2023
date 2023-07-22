@@ -156,3 +156,4 @@ D:\PRN221-Project2023\PRN221-Project2023\Project2023PRN221\obj\Debug\net6.0-wind
 D:\PRN221-Project2023\PRN221-Project2023\Project2023PRN221\obj\Debug\net6.0-windows\Project2023PRN221.pdb
 D:\PRN221-Project2023\PRN221-Project2023\Project2023PRN221\obj\Debug\net6.0-windows\Project2023PRN221.genruntimeconfig.cache
 D:\PRN221-Project2023\PRN221-Project2023\Project2023PRN221\obj\Debug\net6.0-windows\ref\Project2023PRN221.dll
+D:\PRN221-Project2023\PRN221-Project2023\Project2023PRN221\bin\Debug\net6.0-windows\DotNetProjects.Input.Toolkit.dll

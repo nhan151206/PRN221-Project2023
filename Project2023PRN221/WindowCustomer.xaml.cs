@@ -163,5 +163,29 @@ namespace Project2023PRN221
             mainWindow.Show();
             this.Hide();
         }
+
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+            var customer = context.TblKhachHangs.FirstOrDefault(a => a.TenKh.Contains(txtSearch.Text) || a.MakH.Contains(txtSearch.Text) || a.Diachi.Contains(txtSearch.Text));
+            if(customer != null)
+            {
+                txtCustomerName.Text = customer.TenKh;
+                txtCustomerId.Text = customer.MakH.ToString();
+                txtCustomerAddress.Text = customer.Diachi;
+                txtCustomerDob.Text = customer.NgaySinh.ToString();
+                if(customer.Gt == true)
+                {
+                    rbMale.IsChecked = true;
+                }
+                else
+                {
+                    rbFemale.IsChecked = false;
+                }
+            }
+            else
+            {
+                MessageBox.Show("The customer doesn't exist");
+            }
+        }
     }
 }
