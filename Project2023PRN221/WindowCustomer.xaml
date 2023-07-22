@@ -5,6 +5,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Project2023PRN221"
+        xmlns:controls="clr-namespace:System.Windows.Controls;assembly=DotNetProjects.Input.Toolkit"
         mc:Ignorable="d"
         Title="WindowCustomer"
         Height="600"
@@ -47,19 +48,21 @@
                 </Button>
             </StackPanel>
 
-             <!--Search-->
-            <StackPanel Grid.Row="1" 
+            <!--Search-->
+            <StackPanel Grid.Row="1"
                         Orientation="Horizontal"
                         HorizontalAlignment="Center">
-                <TextBox Margin="10 0 0 10"
-                         Name="txtSearch"
-                         Width="250"
-                         Height="40"
-                         FontSize="20"
-                         BorderThickness="2"
-                         Background="{DynamicResource PrimaryHueLightBrush}"
-                         materialDesign:HintAssist.Hint="Enter your search here"
-                         BorderBrush="{DynamicResource MaterialDesignTextFieldBoxHoverBackground}" />
+                <controls:AutoCompleteBox Margin="10 0 0 10"
+                                          Name="txtSearch"
+                                          Width="250"
+                                          Height="40"
+                                          FontSize="20"
+                                          BorderThickness="2"
+                                          Background="{DynamicResource PrimaryHueLightBrush}"
+                                          materialDesign:HintAssist.Hint="Enter your search here"
+                                          BorderBrush="{DynamicResource MaterialDesignTextFieldBoxHoverBackground}">
+                </controls:AutoCompleteBox>
+
                 <Button Background="CornflowerBlue"
                         Height="40"
                         Width="Auto"
@@ -67,10 +70,11 @@
                         Click="btnSearch_Click"
                         Margin="20 0 20 10">
                     <Image Source="Images/img_search.png"
-                           Stretch="Uniform"/>
+                           Stretch="Uniform" />
                 </Button>
             </StackPanel>
 
+            <!--Thong tin khach hang-->
             <StackPanel Grid.Row="2"
                         Orientation="Horizontal"
                         Visibility="Visible">
@@ -83,7 +87,7 @@
                        materialDesign:TextFieldAssist.UnderlineCornerRadius="20" />
                 <TextBox Margin="0 0 100 5"
                          Name="txtCustomerId"
-                         Text="{Binding MakH}" 
+                         Text="{Binding MakH}"
                          DataContext="{Binding SelectedItem, ElementName=listCus}"
                          Width="100"
                          Height="34"
@@ -92,8 +96,7 @@
                          IsReadOnly="True"
                          Background="{DynamicResource PrimaryHueLightBrush}"
                          Opacity="0.5"
-                         BorderBrush="{DynamicResource MaterialDesignDarkBackground}"
-                          />
+                         BorderBrush="{DynamicResource MaterialDesignDarkBackground}" />
                 <Label Content="Customer Name"
                        HorizontalAlignment="Right"
                        Margin="10 5 20 10"
@@ -111,8 +114,7 @@
                          BorderThickness="2"
                          IsEnabled="True"
                          Background="{DynamicResource PrimaryHueLightBrush}"
-                         BorderBrush="{DynamicResource MaterialDesignDarkBackground}" 
-                         />
+                         BorderBrush="{DynamicResource MaterialDesignDarkBackground}" />
             </StackPanel>
 
             <StackPanel Grid.Row="3"
@@ -134,8 +136,7 @@
                          FontSize="20"
                          BorderThickness="2"
                          Background="{DynamicResource PrimaryHueLightBrush}"
-                         BorderBrush="{DynamicResource MaterialDesignDivider}" 
-                         />
+                         BorderBrush="{DynamicResource MaterialDesignDivider}" />
                 <Label Content="Gender"
                        HorizontalAlignment="Right"
                        Margin="10 5 30 10"
@@ -151,15 +152,14 @@
                        FontSize="20"
                        Foreground="WhiteSmoke" />
                 <RadioButton Margin="20 5 0 10"
-                             Name="rbFemale"
-                             />
+                             Name="rbFemale" />
                 <Label Content="Female"
                        HorizontalAlignment="Right"
                        Margin="0 5 30 10"
                        FontSize="20"
                        Foreground="WhiteSmoke" />
             </StackPanel>
-            
+
             <StackPanel Grid.Row="4"
                         Orientation="Horizontal"
                         Visibility="Visible">
@@ -239,30 +239,30 @@
 
             <!--ListView-->
             <Grid Grid.Row="6">
-                    <ListView Name="listCus"
-                              PreviewMouseLeftButtonUp="listView_Click"
-                              materialDesign:ListViewAssist.HeaderRowBackground="Aquamarine"
-                              materialDesign:ListViewAssist.ListViewItemPadding="30 0 0 10">
-                        <ListView.View>
-                            <GridView>
-                                <GridViewColumn Header="Customer ID"
-                                                Width="150"
-                                                DisplayMemberBinding="{Binding Path=MakH}" />
-                                <GridViewColumn Header="Customer Name"
-                                                Width="200"
-                                                DisplayMemberBinding="{Binding Path=TenKh}" />
-                                <GridViewColumn Header="Gender"
-                                                Width="120"
-                                                DisplayMemberBinding="{Binding Path=Gt}" />
-                                <GridViewColumn Header="Address"
-                                                Width="150"
-                                                DisplayMemberBinding="{Binding Path=Diachi}" />
-                                <GridViewColumn Header="Date of Birth"
-                                                Width="150"
-                                                DisplayMemberBinding="{Binding Path=NgaySinh, StringFormat='dd/MM/yyyy'}" />
-                            </GridView>
-                        </ListView.View>
-                    </ListView>
+                <ListView Name="listCus"
+                          PreviewMouseLeftButtonUp="listView_Click"
+                          materialDesign:ListViewAssist.HeaderRowBackground="Aquamarine"
+                          materialDesign:ListViewAssist.ListViewItemPadding="30 0 0 10">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Customer ID"
+                                            Width="150"
+                                            DisplayMemberBinding="{Binding Path=MakH}" />
+                            <GridViewColumn Header="Customer Name"
+                                            Width="200"
+                                            DisplayMemberBinding="{Binding Path=TenKh}" />
+                            <GridViewColumn Header="Gender"
+                                            Width="120"
+                                            DisplayMemberBinding="{Binding Path=Gt}" />
+                            <GridViewColumn Header="Address"
+                                            Width="150"
+                                            DisplayMemberBinding="{Binding Path=Diachi}" />
+                            <GridViewColumn Header="Date of Birth"
+                                            Width="150"
+                                            DisplayMemberBinding="{Binding Path=NgaySinh, StringFormat='dd/MM/yyyy'}" />
+                        </GridView>
+                    </ListView.View>
+                </ListView>
             </Grid>
         </Grid>
     </Border>

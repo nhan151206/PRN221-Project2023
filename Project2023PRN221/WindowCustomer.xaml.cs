@@ -27,6 +27,7 @@ namespace Project2023PRN221
         {
             context = new PRN221PROJECTContext();
             InitializeComponent();
+            txtSearch.ItemsSource = context.TblKhachHangs.Where(a => a.Active == true).Select(a => a.TenKh).ToList();
             LoadData();
         }
 
@@ -179,7 +180,7 @@ namespace Project2023PRN221
                 }
                 else
                 {
-                    rbFemale.IsChecked = false;
+                    rbFemale.IsChecked = true;
                 }
             }
             else
