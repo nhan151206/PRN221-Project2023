@@ -265,9 +265,16 @@
                                 FontSize="20"
                                 Content="BACK"
                                 Click="btnBack_Click" />
-                        <TextBox Name="txtProductId"
-                                 Visibility="Hidden"/>
                     </StackPanel>
+                    <TextBox Margin="0 0 50 5"
+                             Name="txtProductId"
+                             Width="150"
+                             Height="20"
+                             FontSize="20"
+                             BorderThickness="2"
+                             Visibility="Hidden"
+                             Background="{DynamicResource PrimaryHueLightBrush}"
+                             BorderBrush="{DynamicResource MaterialDesignDivider}" />
                 </StackPanel>
                 <ListView Name="listOrder"
                           Grid.Column="1"

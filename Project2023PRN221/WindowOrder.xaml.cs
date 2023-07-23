@@ -80,6 +80,10 @@ namespace Project2023PRN221
             cbProductName.Text = String.Empty;
             txtPrice.Text = String.Empty;
             txtQuantity.Text = String.Empty;
+
+            LoadData();
+            btnUpdateOrder.IsEnabled = false;
+            btnRemoveOrder.IsEnabled = false;
         }
 
         private void btnOrder_Click(object sender, RoutedEventArgs e)
@@ -124,7 +128,7 @@ namespace Project2023PRN221
                 {
                     TblChiTietHd p = new TblChiTietHd
                     {
-                        MaHd = Int32.Parse(txtOrderId.Text),
+                        MaHd = decimal.Parse(txtOrderId.Text),
                         MaHang = txtProductId.Text.ToString(),
                         Soluong = Int32.Parse(txtQuantity.Text)
                     };
@@ -185,12 +189,15 @@ namespace Project2023PRN221
 
         private void cbProductName_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var product = context.TblMatHangs.FirstOrDefault(a => a.TenHang.Equals(cbProductName.Text) && a.Active == true);
-            if (product != null)
+            if(cbProductName.Text != String.Empty)
             {
-                txtPrice.Text = product.Gia.ToString();
-                txtProductId.Text = product.MaHang.ToString();
-            }
+                var product = context.TblMatHangs.FirstOrDefault(a => a.TenHang.Equals(cbProductName.SelectedItem.ToString()) && a.Active == true);
+                if (product != null)
+                {
+                    txtPrice.Text = product.Gia.ToString();
+                    txtProductId.Text = product.MaHang.ToString();
+                }
+            } 
         }
 
         private void txtOrderId_TextChanged(object sender, TextChangedEventArgs e)
