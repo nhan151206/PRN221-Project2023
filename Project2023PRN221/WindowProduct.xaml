@@ -7,7 +7,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Project2023PRN221"
         mc:Ignorable="d"
-        Title="WindowCustomer"
+        Title="WindowProduct"
         Height="600"
         Width="800"
         WindowStartupLocation="CenterScreen"
