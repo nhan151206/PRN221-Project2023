@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\PRN221-Project2023\PRN221-Project2023\Project2023PRN221\App.xaml
-7110353646
+6-482692027
 
-16-1687845729
-224-426483554
-MainWindow.xaml;Theme\MenuButtonTheme.xaml;Theme\MenuItemTheme.xaml;WindowCustomer.xaml;WindowLogin.xaml;WindowOrder.xaml;WindowProduct.xaml;
+17-277838289
+2261467736680
+MainWindow.xaml;WindowCustomer.xaml;WindowLogin.xaml;WindowOrder.xaml;WindowProduct.xaml;WindowReport.xaml;
 
 True
 

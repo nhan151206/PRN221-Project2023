@@ -127,8 +127,6 @@ D:\PRN221-Project2023\PRN221-Project2023\Project2023PRN221\bin\Debug\net6.0-wind
 D:\PRN221-Project2023\PRN221-Project2023\Project2023PRN221\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\PRN221-Project2023\PRN221-Project2023\Project2023PRN221\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 D:\PRN221-Project2023\PRN221-Project2023\Project2023PRN221\obj\Debug\net6.0-windows\Project2023PRN221.csproj.AssemblyReference.cache
-D:\PRN221-Project2023\PRN221-Project2023\Project2023PRN221\obj\Debug\net6.0-windows\Theme\MenuButtonTheme.baml
-D:\PRN221-Project2023\PRN221-Project2023\Project2023PRN221\obj\Debug\net6.0-windows\Theme\MenuItemTheme.baml
 D:\PRN221-Project2023\PRN221-Project2023\Project2023PRN221\obj\Debug\net6.0-windows\MainWindow.g.cs
 D:\PRN221-Project2023\PRN221-Project2023\Project2023PRN221\obj\Debug\net6.0-windows\WindowCustomer.g.cs
 D:\PRN221-Project2023\PRN221-Project2023\Project2023PRN221\obj\Debug\net6.0-windows\WindowLogin.g.cs
@@ -157,3 +155,7 @@ D:\PRN221-Project2023\PRN221-Project2023\Project2023PRN221\obj\Debug\net6.0-wind
 D:\PRN221-Project2023\PRN221-Project2023\Project2023PRN221\obj\Debug\net6.0-windows\Project2023PRN221.genruntimeconfig.cache
 D:\PRN221-Project2023\PRN221-Project2023\Project2023PRN221\obj\Debug\net6.0-windows\ref\Project2023PRN221.dll
 D:\PRN221-Project2023\PRN221-Project2023\Project2023PRN221\bin\Debug\net6.0-windows\DotNetProjects.Input.Toolkit.dll
+D:\PRN221-Project2023\PRN221-Project2023\Project2023PRN221\bin\Debug\net6.0-windows\LiveCharts.dll
+D:\PRN221-Project2023\PRN221-Project2023\Project2023PRN221\bin\Debug\net6.0-windows\LiveCharts.Wpf.dll
+D:\PRN221-Project2023\PRN221-Project2023\Project2023PRN221\obj\Debug\net6.0-windows\WindowReport.g.cs
+D:\PRN221-Project2023\PRN221-Project2023\Project2023PRN221\obj\Debug\net6.0-windows\WindowReport.baml

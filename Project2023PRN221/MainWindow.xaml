@@ -76,6 +76,16 @@
                         </MenuItem.Icon>
                     </MenuItem>
 
+                    <MenuItem Header="Report"
+                              Click="Stat_Click"
+                              HorizontalAlignment="Left"
+                              Margin="0 0 0 10"
+                              Foreground="Aqua">
+                        <MenuItem.Icon>
+                            <Image Source="Images/img_history.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+
                     <MenuItem Header="Back"
                               Click="Back_Click"
                               HorizontalAlignment="Left"

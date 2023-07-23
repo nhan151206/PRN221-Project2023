@@ -19,15 +19,12 @@
     <Compile Update="WindowProduct.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="WindowReport.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Theme\MenuButtonTheme.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Theme\MenuItemTheme.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="WindowCustomer.xaml">
@@ -40,6 +37,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="WindowProduct.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WindowReport.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

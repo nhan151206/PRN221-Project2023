@@ -36,7 +36,7 @@ namespace Project2023PRN221
             txtProductId.Text = String.Empty;
             txtProductName.Text = String.Empty;
             txtProductPrice.Text = String.Empty;
-            cbProductType.Text = String.Empty;
+            txtSearch.Text = String.Empty;
         }
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)

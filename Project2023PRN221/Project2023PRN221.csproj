@@ -11,6 +11,7 @@
     <None Remove="Images\homepage.png" />
     <None Remove="Images\img_customer.png" />
     <None Remove="Images\img_exit.png" />
+    <None Remove="Images\img_history.png" />
     <None Remove="Images\img_home.png" />
     <None Remove="Images\img_order.png" />
     <None Remove="Images\img_product.png" />
@@ -21,6 +22,7 @@
 
   <ItemGroup>
     <PackageReference Include="DotNetProjects.WpfToolkit.Input" Version="6.1.94" />
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
     <PackageReference Include="MaterialDesignThemes" Version="4.9.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.10">
       <PrivateAssets>all</PrivateAssets>
@@ -34,6 +36,7 @@
     <Resource Include="Images\homepage.png" />
     <Resource Include="Images\img_customer.png" />
     <Resource Include="Images\img_exit.png" />
+    <Resource Include="Images\img_history.png" />
     <Resource Include="Images\img_home.png" />
     <Resource Include="Images\img_order.png" />
     <Resource Include="Images\img_product.png" />

@@ -25,11 +25,6 @@ namespace Project2023PRN221
             InitializeComponent();
         }
 
-        private void MenuItem_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void Customer_Click(object sender, RoutedEventArgs e)
         {
             WindowCustomer windowCustomer = new WindowCustomer();
@@ -61,6 +56,13 @@ namespace Project2023PRN221
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
+        }
+
+        private void Stat_Click(object sender, RoutedEventArgs e)
+        {
+            WindowReport windowReport = new WindowReport();
+            windowReport.Show();
+            this.Hide();
         }
     }
 }
