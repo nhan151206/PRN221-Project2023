@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\PRN221-Project2023\PRN221-Project2023\Project2023PRN221\obj\Debug\net6.0-windows\
+F:\TERM8\PRN231\PRN231-Project2023\Project2023PRN221\obj\Debug\net6.0-windows\
 Project2023PRN221
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-D:\PRN221-Project2023\PRN221-Project2023\Project2023PRN221\App.xaml
+F:\TERM8\PRN231\PRN231-Project2023\Project2023PRN221\App.xaml
 6-482692027
 
-17-277838289
-2261467736680
+171667380238
+226447572295
 MainWindow.xaml;WindowCustomer.xaml;WindowLogin.xaml;WindowOrder.xaml;WindowProduct.xaml;WindowReport.xaml;
 
-True
+False
 

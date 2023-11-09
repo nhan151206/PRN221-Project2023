@@ -2,8 +2,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Headers;
+using System.Net.Http;
 using System.Reflection;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -22,6 +25,7 @@ namespace Project2023PRN221
     public partial class WindowProduct : Window
     {
         private PRN221PROJECTContext context;
+        private string UrlApi = "http://localhost:7193/api/";
         public WindowProduct()
         {
             context = new PRN221PROJECTContext();
@@ -115,9 +119,27 @@ namespace Project2023PRN221
                 MessageBox.Show(ex.Message);
             }
         }
-        private void LoadData()
+        private async void LoadData()
         {
             listProduct.ItemsSource = context.TblMatHangs.Where(a => a.Active == true).ToList();
+            using (HttpClient client = new HttpClient())
+            {
+                var contenType = new MediaTypeWithQualityHeaderValue("application/json");
+                client.DefaultRequestHeaders.Accept.Add(contenType);
+                using (HttpResponseMessage responseMessage = await client.GetAsync(UrlApi + "Product"))
+                {
+                    if (responseMessage.IsSuccessStatusCode)
+                    {
+                        string conten = await responseMessage.Content.ReadAsStringAsync();
+                        var option = new JsonSerializerOptions
+                        {
+                            PropertyNameCaseInsensitive = true,
+                        };
+                        List<TblMatHang> data = JsonSerializer.Deserialize<List<TblMatHang>>(conten, option);
+                        listProduct.ItemsSource =  data;
+                    }
+                }
+            }
         }
 
         private void btnBack_Click(object sender, RoutedEventArgs e)
